@@ -1,0 +1,58 @@
+<html>
+<head>
+    <br>
+    <title>Oded's HolidayApp</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.background {
+            background: url(https://i.postimg.cc/q7dwybPw/holidays.jpg) repeat;
+            opacity: 0.4;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <center>
+        <h1>Welcome to HolidayApp</h1>
+<!--            <br>-->
+            <p>Holidays for the upcoming year:</p>
+            <center>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Hebrew Date</th>
+                    </tr>
+                    {% for title, details in dicta.items() %}
+                        <tr>
+                            <td>{{ title }}</td>
+                            <td>{{ details.date }}</td>
+                            <td>{{ details.hdate }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </center>
+    </center>
+</body>
+</html>
