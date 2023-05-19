@@ -1,0 +1,12 @@
+[Unit]
+Description=gunicorn service  # service name
+After=network.target  # starts the service after network connection is being established
+
+[Service]
+User=root
+WorkingDirectory=/home/vagrant/data/application  # sets location of start
+ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0 application:application  # sets command to start, including location of the command
+
+[Install]
+WantedBy=multi-user.target  # sets when the service will be started during startup processes
+
