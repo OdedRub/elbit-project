@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo yum -y install epel-release  # installs extra packages 
 sudo yum -y update  # version update
 sudo yum groupinstall "Development Tools" -y  # installs package of macros and debuggers for python
