@@ -26,5 +26,6 @@ sudo mv gunicorn.service /etc/systemd/system/gunicorn.service  # copies gunicorn
 sudo systemctl daemon-reload  # reloads configuration of systemd after changes being made
 sudo systemctl enable gunicorn  # sets gunicorn service to start on startup
 sudo systemctl start gunicorn  # starts gunicorn
-sudo rm Python-3.10.2.tgz  # cleaning
-sudo rm -rf Python-3.10.2  # cleaning
+sudo rm /home/vagrant/Python-3.10.2.tgz  # cleaning
+sudo rm -rf /home/vagrant/Python-3.10.2  # cleaning
+ip addr show  # shows assigned ip addresses
