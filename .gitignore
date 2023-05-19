@@ -1,0 +1,18 @@
+#ignore these files:
+*
+
+#folders to NOT ignore:
+!*/
+
+#folders to ignore:
+
+#files to NOT ignore:
+!*.sh
+!.gitignore
+!*.service
+!Vagrantfile
+!*.conf
+!*.py
+!*.html
+!*.md
+
