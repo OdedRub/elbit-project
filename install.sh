@@ -20,6 +20,14 @@ sudo mv nginx.conf /etc/nginx/nginx.conf  # replaces nginx configuration file
 sudo rm /etc/nginx/nginx.conf.default
 sudo mkdir /etc/nginx/certs
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/certs/server.key -out /etc/nginx/certs/server.crt -subj "/C=IL/ST=./L=./O=./CN=."  # creates self signed ssl certificates
+# sudo yum install snapd -y  # installs snapd downloader
+# sudo systemctl enable --now snapd.socket  # enables snapd socket 
+# sudo ln -s /var/lib/snapd/snap /snap  # enables classic snap support
+# sudo snap install core
+# sudo snap refresh core  # checks for latest snapd version
+# sudo snap install --classic certbot  # installs certbot for certification creation
+# sudo ln -s /snap/bin/certbot /usr/bin/certbot  # prepares certbot command
+# sudo certbot certonly --nginx --non-interactive --agree-tos --register-unsafely-without-email --domains ${domain_name}  # creates nginx certificate
 sudo restorecon /etc/nginx/certs/*  # restores file's original context after its moving
 sudo restorecon /etc/nginx/nginx.conf
 sudo setsebool -P httpd_can_network_connect 1  # allows Apache httpd to make API requests to the internet
