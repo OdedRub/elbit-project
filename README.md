@@ -9,17 +9,17 @@ The web application presents a table of the Jewish holidays for the next 3 month
 ## Installation & Usage
 
 To set up and run this project locally, follow these steps:
-```
+
 1. Install Vagrant and VirtualBox on your host machine.
 Vagrant- https://developer.hashicorp.com/vagrant/downloads?product_intent=vagrant
 VirtualBox- https://tecadmin.net/how-to-install-virtualbox-on-ubuntu-22-04/
 2. Clone the repository to your local machine.	
 3. Navigate to the project directory.
-4. Launch the Vagrant environment by running the command 'vagrant up'.
+4. Launch the Vagrant environment by running the command `vagrant up`.
 5. Once the virtual machine is up, check the last message log to find the machine's IP address.
 6. Type the IP address in your web browser to access the application.
-7. SSH into the Vagrant virtual machine using 'vagrant ssh' in order to make changes or to find the machine's IP using the command 'ip addr show'.
-```
+7. SSH into the Vagrant virtual machine using 'vagrant ssh' in order to make changes or to find the machine's IP using the command `ip addr show`.
+
 
 ## Files
 
