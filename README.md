@@ -18,7 +18,7 @@ VirtualBox- https://tecadmin.net/how-to-install-virtualbox-on-ubuntu-22-04/
 4. Launch the Vagrant environment by running the command `vagrant up`.
 5. Once the virtual machine is up, check the last message log to find the machine's IP address.
 6. Type the IP address in your web browser to access the application.
-7. SSH into the Vagrant virtual machine using 'vagrant ssh' in order to make changes or to find the machine's IP using the command `ip addr show`.
+7. SSH into the Vagrant virtual machine using `vagrant ssh` in order to make changes or to find the machine's IP using the command `ip addr show`.
 
 
 ## Files
